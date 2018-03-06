@@ -54,8 +54,8 @@ class KMapGui(object):
 
     def ele_button_clicked(self, e):
         ele_id = e.GetId() - 100
-        x = ele_id / 10
-        y = ele_id % 10
+        x = int(ele_id / 10)
+        y = int(ele_id % 10)
         self.map_data[x][y] = ([1, 2, 0])[int(self.map_data[x][y])]
         self.buttons[x][y].SetLabel(str(self.map_data[x][y]) if self.map_data[x][y] != 2 else 'X')
 

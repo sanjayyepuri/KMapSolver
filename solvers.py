@@ -1,5 +1,5 @@
 from helpers import *
-
+from functools import *
 
 class KMapSolver(object):
     NUMBER_OF_VARS = None
